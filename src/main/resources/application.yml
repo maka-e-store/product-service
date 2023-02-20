@@ -1,0 +1,19 @@
+page:
+  default:
+    size: 5
+    number: 0
+    sort: updatedOn
+    order: asc
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  error:
+    include-message: always
+deployment:
+  ip_local: http://localhost:4200
+
+feign:
+  httpclient:
+    disableSslValidation: true
+---
