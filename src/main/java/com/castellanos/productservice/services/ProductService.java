@@ -35,14 +35,14 @@ public class ProductService {
    }
 
    public Product createProduct(ProductDTO productDto){
-        Product product = new Product(productDto.getId(),productDto.getName(),productDto.getCost(),productDto.getSize(),
-                                        productDto.getDescription(),productDto.getPhoto(),productDto.getAmount());
+        Product product = new Product(productDto.getId(), productDto.getName(), productDto.getCost(), productDto.getSize(),
+                                        productDto.getDescription(), productDto.getPhoto(), productDto.getAmount(), productDto.getProductType());
         return this.productRepo.save(product);
    }
 
    public Product updateProduct(ProductDTO productDto, String prodId){
-       Product updatedProduct = new Product(productDto.getName(),productDto.getCost(),productDto.getSize(),
-               productDto.getDescription(),productDto.getPhoto(),productDto.getAmount());
+       Product updatedProduct = new Product(productDto.getName(), productDto.getCost(), productDto.getSize(),
+               productDto.getDescription(), productDto.getPhoto(), productDto.getAmount(), productDto.getProductType());
        return this.productRepo.save(updatedProduct);
    }
 

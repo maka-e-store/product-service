@@ -9,7 +9,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/user-quizzes")
+@RequestMapping("/products/")
 public class ProductController {
 
     private final ProductService productService;
